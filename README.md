@@ -74,11 +74,12 @@ flowchart TD
 ```
 #### Odwzorowywane urządzenie
 
+<center>
 **PHILIPS SAECO Granaroma SM6580**
 
 
 <img src="https://prod-api.mediaexpert.pl/api/images/gallery/thumbnails/images/30/3067892/Ekspres-SAECO-Granaroma-SM6580-00-front-wer2.jpg" alt="drawing" width="400"/>
-
+</center>
 
 ## Konstrukcja systemu
 
