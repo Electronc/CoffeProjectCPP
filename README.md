@@ -164,8 +164,7 @@ Wyjmowanie, odkładanie kubka
 
 <img src="docImages/TakeOutAnotherObject.png" alt="drawing" width="1200"/>
 
-
-Uzupełnianie poziomu napoju w kubku
+- Obsługa błędów i wyjątków
 
 <img src="docImages/eventGraph.png" alt="drawing" width="1200"/>
 
