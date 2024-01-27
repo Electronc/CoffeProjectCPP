@@ -14,6 +14,7 @@
       - [Blender ver. 4.0](#blender-ver-40)
       - [Unreal Engine ver. 5.1.1](#unreal-engine-ver-511)
     - [Blueprinty](#blueprinty)
+    - [Wideget Blueprint](#wideget-blueprint)
   - [Dokumentacja kodu](#dokumentacja-kodu)
     - [InteractionComponent.cpp](#interactioncomponentcpp)
       - [Zawartość pliku](#zawartość-pliku)
@@ -73,12 +74,13 @@ flowchart TD
     F --> L[Spożycie napoju]
 ```
 #### Odwzorowywane urządzenie
-
+<br>
 <center>
+
 **PHILIPS SAECO Granaroma SM6580**
 
 
-<img src="https://prod-api.mediaexpert.pl/api/images/gallery/thumbnails/images/30/3067892/Ekspres-SAECO-Granaroma-SM6580-00-front-wer2.jpg" alt="drawing" width="400"/>
+<img src="https://prod-api.mediaexpert.pl/api/images/gallery/thumbnails/images/30/3067892/Ekspres-SAECO-Granaroma-SM6580-00-front-wer2.jpg" alt="drawing" width="350"/>
 </center>
 
 ## Konstrukcja systemu
@@ -105,6 +107,21 @@ Projekty wykonane w tej technologii opierają się o następujące elementy:
 
 
 ### Blueprinty
+Blueprinty odpowiadają za następujące mechaniki i interakcje:
+- Nalewanie wody z butelki
+  
+[Blueprint](docImages/addWater.png)
+
+
+
+- Opróżnianie fusów
+- Sprawdzenie czy możliwe jest zrobienie kawy
+- Interakcje z kubkiem
+
+
+### Wideget Blueprint
+Widget blueprint to specjalny rodzaj blueprintu, który służy do tworzenia interfejsu użytkownika.
+W projekcie odpowiada on za wyświetlacz i umożliwenie obsługi ekspresu przez dotykowy wyświetlacz
 
 ## Dokumentacja kodu
 
