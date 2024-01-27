@@ -1,12 +1,18 @@
 # Dokumentacja projektu Coffe Anril
+
+# Tabela zawartości
 - [Dokumentacja projektu Coffe Anril](#dokumentacja-projektu-coffe-anril)
+- [Tabela zawartości](#tabela-zawartości)
   - [Analiza wymagań](#analiza-wymagań)
     - [Wymagania funkcjonalne:](#wymagania-funkcjonalne)
     - [Wymagania niefunkcjonalne:](#wymagania-niefunkcjonalne)
-    - [Przypadki użycia](#przypadki-użycia)
+    - [Przypadek użycia](#przypadek-użycia)
       - [Przygotowanie napoju](#przygotowanie-napoju)
+      - [Odwzorowywane urządzenie](#odwzorowywane-urządzenie)
   - [Konstrukcja systemu](#konstrukcja-systemu)
     - [Opis wybranej technologii/specyfikacja projektu](#opis-wybranej-technologiispecyfikacja-projektu)
+      - [Blender ver. 4.0](#blender-ver-40)
+      - [Unreal Engine ver. 5.1.1](#unreal-engine-ver-511)
     - [Blueprinty](#blueprinty)
   - [Dokumentacja kodu](#dokumentacja-kodu)
     - [InteractionComponent.cpp](#interactioncomponentcpp)
@@ -47,24 +53,55 @@ Celem projektu było przygotowanie wirtualnej prezentacji sprzętu AGD - Ekspres
 - Obecność cieni, przenikania lub gradientów
 - Wybrana technologia powinna pozwalać na wykorzsytanie języka programowania
 
-### Przypadki użycia
+### Przypadek użycia
 
 #### Przygotowanie napoju
 
 ```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+flowchart TD
+    A((fa:fa-user Koneser kawy)) -->|Podejście do ekspersu| B(Wybudzenie ekspresu)
+    B --> G{Czy kawa może być zrobiona?}
+    G -->|Nie| M([Wyświetlenie ostrzeżenia])
+    M --> H{Co uniemożliwia zrobienie kawy?}
+    G-->|TAK|I[Wybranie mocy napoju]
+    H-->|Zapełniony pojemnik fusów|J[Opróżnienie pojemnika]-->G
+    H-->|Brak wody|K[Napełnienie wody]-->G
+    I -->C(Wybranie jednego z 4 rodzajów napoju)
+    C --> D([Rozpoczęcie procesu powstawnia kawy])
+    D --> |fa:fa-clock Oczekiwanie|E([Zakończenie przygotowywania kawy])
+    E --> F[Zabranie kubka z kawą]
+    F --> L[Spożycie napoju]
 ```
+#### Odwzorowywane urządzenie
+
+**PHILIPS SAECO Granaroma SM6580**
 
 
+<img src="https://prod-api.mediaexpert.pl/api/images/gallery/thumbnails/images/30/3067892/Ekspres-SAECO-Granaroma-SM6580-00-front-wer2.jpg" alt="drawing" width="400"/>
 
 
 ## Konstrukcja systemu
 
 ### Opis wybranej technologii/specyfikacja projektu
+
+Po analizie kompetencji własnych oraz rozwiązań rynkowych zdecydowaliśmy się na wykorzsytanie następujących narzędzi:
+- **Oprogramowanie Blender** - służące do wykonania modelu 3D ekspresu
+- **Środowisko silnika Unreal Engine** - do wykonania interakcji oraz środowiska wirtualnego służącego do prezentacji produktu
+- **Photoshop** - wykonanie elementów graficznych interfejsu graficznego
+  
+
+#### Blender ver. 4.0
+To darmowy profesjonalny program do tworzenia grafiki 3D. Modele utworzone w tym programie są w pełni kompatybilne z silnikiem Unreal Engine.
+Dodatkowo w pełni przenoszą się wszystkie tekstury oraz właściwości modelu.
+
+#### Unreal Engine ver. 5.1.1
+Unreal Engine to zaawansowany silnik do tworzenia gier. Tworzy on kompleksowe środowisko do tworzenia interaktywnych wizualizacji 3D oraz symulacji. 
+Projekty wykonane w tej technologii opierają się o następujące elementy:
+- **Assety** - modele 2D bądź 3D tworzące środowisko graficzne
+- **Kod w języku C++** - służący do dostosowywania i poszerzania możliwości silnika względem konkretnych potrzeb projektów
+- **Blueprint`y** - dominujący system oparty na wizualnym interfejsie, który pozwala na tworzenie logiki gry za pomocą gotowych bloków logicznych, nazywanych "Node'ami". Pozwalają one określić zachowania różnych elementów gry.
+
+
 
 ### Blueprinty
 
