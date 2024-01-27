@@ -83,10 +83,10 @@ W pliku znajdują się następujące metody:
 ##Samouczek obslugi aplikacji
 
 Urządzenie na, którym ma zostać uruchomiona aplikacja musi spełniać następujące wymagania:
-[ ] - System operacyjny Windows 10
-[ ] - Dedykowana karta graficzna zgodna z DirectX 11 min. 4GB VRAM (NVIDIA GTX 1060)
-[ ] - Karta dźwiękowa zgodna z DirectX 11
-[ ] - Klawiatura i mysz
+- [ ] System operacyjny Windows 10
+- [ ] Dedykowana karta graficzna zgodna z DirectX 11 min. 4GB VRAM (NVIDIA GTX 1060)
+- [ ] Karta dźwiękowa zgodna z DirectX 11
+- [ ] Klawiatura i mysz
 
 ### 1. Uruchomienie aplikacji
 
