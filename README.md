@@ -528,13 +528,13 @@ Smacznego!
 
 2.	Podejdź do kosza na śmieci i wysyp fusy (LPM)
 
-<img src="screenFromProgram/zdjecie19.png" alt="drawing" width="500"/>
-
 3.	Wstaw ponownie pojemnik do kawiarki (E)
 
-<img src="screenFromProgram/zdjecie20.png" alt="drawing" width="500"/>
+<img src="screenFromProgram/zdjecie19.png" alt="drawing" width="500"/>
 
 4.	Komunikat powinien zniknąć. Można przystąpić do przygotowania napoju.
+
+<img src="screenFromProgram/zdjecie20.png" alt="drawing" width="500"/>
 
 
 
