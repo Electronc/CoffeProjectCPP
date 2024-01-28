@@ -15,7 +15,7 @@
       - [Blender ver. 4.0](#blender-ver-40)
       - [Unreal Engine ver. 5.1.1](#unreal-engine-ver-511)
     - [Blueprinty](#blueprinty)
-    - [Wideget Blueprint](#wideget-blueprint)
+    - [Widget Blueprint](#widget-blueprint)
     - [Uwagi końcowe](#uwagi-końcowe)
   - [Dokumentacja kodu](#dokumentacja-kodu)
     - [InteractionComponent.cpp](#interactioncomponentcpp)
@@ -48,6 +48,8 @@
       - [Sterowanie kamerą](#sterowanie-kamerą)
       - [Interakcje z przedmiotami](#interakcje-z-przedmiotami)
     - [Instrukcja przygotowania napoju](#instrukcja-przygotowania-napoju)
+    - [Instrukcja dolania wody](#instrukcja-dolania-wody)
+    - [Instrukcja opróżnienia pojemnika na fusy](#instrukcja-opróżnienia-pojemnika-na-fusy)
 
 
 ## Przykładowe zdjęcia z programu
@@ -176,7 +178,7 @@ Wyjmowanie, odkładanie kubka
 
 
 
-### Wideget Blueprint
+### Widget Blueprint
 Widget blueprint to specjalny rodzaj blueprintu, który służy do tworzenia interfejsu użytkownika.
 W projekcie odpowiada on za wyświetlacz i umożliwenie obsługi ekspresu przez dotykowy wyświetlacz
 
@@ -189,7 +191,7 @@ W projekcie odpowiada on za wyświetlacz i umożliwenie obsługi ekspresu przez 
 
 
 ### Uwagi końcowe
-Opisy dotyczące blueprintów mają jedynie na celu pokazać w jaki sposób został skonstruowany projekt i jaki elementy zostały przez nas wykorzystane.
+Blueprinty mają jedynie na celu pokazać w jaki sposób został skonstruowany projekt i jaki elementy zostały przez nas wykorzystane.
 W większości są to powtarzalne konstrukcje, które są odpowiednio dostosowane do danego miejsca w programie.
 
 ## Dokumentacja kodu
@@ -491,6 +493,51 @@ Sterowanie kamerą odbywa się za pomocą ruchu myszy.
 <img src="screenFromProgram/zdjecie11.png" alt="drawing" width="500"/>
 
 Smacznego!
+
+
+### Instrukcja dolania wody
+
+<img src="screenFromProgram/zdjecie12.png" alt="drawing" width="500"/>
+
+1.	Otwórz tylną pokrywę zbiornika na wodę (E)
+
+<img src="screenFromProgram/zdjecie13.png" alt="drawing" width="500"/>
+
+2.	Wyjmij butelkę z wodą (R)
+
+<img src="screenFromProgram/zdjecie14.png" alt="drawing" width="500"/>
+
+3. Ustaw butelkę odpowiednio wysoko nad zbiornikiem i wciśnij LPM aby rozpocząć proces dolewania wody. Gdy z wyświetlacza zniknie błąd, proces można zakończyć
+
+<img src="screenFromProgram/zdjecie15.png" alt="drawing" width="500"/>
+
+4. Schowaj butelkę z wodą (R) i zamknij pojemnik na wodę (E)
+
+
+<img src="screenFromProgram/Zdjecie16.png" alt="drawing" width="500"/>
+
+
+
+### Instrukcja opróżnienia pojemnika na fusy
+
+<img src="screenFromProgram/zdjecie17.png" alt="drawing" width="500"/>
+
+1. Wyjmij pojemnik na fusy (E)
+
+<img src="screenFromProgram/zdjecie18.png" alt="drawing" width="500"/>
+
+2.	Podejdź do kosza na śmieci i wysyp fusy (LPM)
+
+<img src="screenFromProgram/zdjecie19.png" alt="drawing" width="500"/>
+
+3.	Wstaw ponownie pojemnik do kawiarki (E)
+
+<img src="screenFromProgram/zdjecie20.png" alt="drawing" width="500"/>
+
+4.	Komunikat powinien zniknąć. Można przystąpić do przygotowania napoju.
+
+
+
 
    
 
